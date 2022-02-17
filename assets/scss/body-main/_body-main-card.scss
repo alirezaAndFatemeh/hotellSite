@@ -1,0 +1,76 @@
+.card{
+    @include display(flex ,row,space-between,center)
+}
+.box-img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 300px;
+    height: 480px;
+}
+
+@keyframes titleBox {
+    from {
+        bottom: 100px
+    }
+    to {
+        bottom: 20px
+    }
+}
+
+.box{ 
+    color: #fff !important;
+    padding-top: 20px ;
+    padding-left: 20px;
+    height: 460px;
+    position: relative;
+    .box_logo{
+        width: 120px;
+        height: 50px;
+       
+    }
+    .box_title h2{
+        position: absolute;
+        bottom: 20px ;
+        left: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        transition: all 0.8 linear;
+    }
+    &:hover .box_title h2{
+        bottom: 30px !important;
+        opacity:0;
+    }
+    &:not( :hover) .box_title h2 {
+        animation-name: titleBox;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .box_paragraph{
+        height: 0px;
+        width: 330px;
+        visibility: hidden;
+        color: $color-white; 
+        background-color: $color-rgba;
+        @include font2( 15px,none);
+        position: absolute;
+        bottom: 0px;
+        left: -15px;
+        @include display(flex,row,center,flex-end);
+        transition: height 0.4s linear;
+        
+    } 
+    &:hover .box_paragraph{
+        visibility: visible;
+        height: 480px;
+        cursor: $cursor-pointer;
+    }
+   
+    .box_paragraph p{
+        padding: 40px 20px;
+        
+    }
+}
+

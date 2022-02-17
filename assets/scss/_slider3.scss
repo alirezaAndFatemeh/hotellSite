@@ -1,0 +1,75 @@
+.slider3-title{
+    text-align: center;
+    .s3-h2{
+        @include font('Playfair Display' 'Source Sans Pro' ,40px,700);
+        margin-bottom: 4px;
+    }
+    .s3-subtitle{
+        @include font('Source Sans Pro' sans-serif ,10px ,300);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .s3-svg{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+}
+
+
+
+.slider3-carousel{
+    max-width: 100%;
+    overflow: hidden; 
+    margin-bottom: 100px; 
+}
+
+.carousel-content{
+    display: flex;
+    flex-flow: row nowrap;
+    transition: all 0.2s linear;
+}
+  
+.carousel-item{
+    flex: 1 0 100vw;
+    width: 100%;
+
+}
+
+.slider3-row{
+    display: flex;
+    .slider3-img{
+    border-radius: 50%;
+    width: 99px;
+    }
+}
+
+.slider3-text{
+    width: 40%;
+    margin-left: 20px;
+    
+    h4{
+        @include font(' Playfair Display' sans-serif , 20px, 700);
+        color: #323232;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin-bottom: 13.5px;
+    }
+
+    .s3-paragragh{
+        @include font(' Playfair Display' sans-serif , 20px, 200);
+        color: #555050;
+        margin-bottom: 15px;
+    }
+
+    .s3_author{
+        @include font(' Playfair Display' sans-serif , 16px, 500);
+       
+    }
+
+    .s3_author_role{
+        font-size: 15px;
+        font-style: italic;
+        color:#a7a2a2
+    }
+}

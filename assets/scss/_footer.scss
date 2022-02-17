@@ -1,0 +1,95 @@
+.footer-1 {
+    height: 230px;
+    background-color: #15151e;
+    text-align: center;
+
+    .footer1-img{
+        width: 120px;
+        padding-top: 40px;
+    }
+}
+
+.footer1-icon{
+    @include display(flex ,row , center ,center);
+    margin: 0px 90px;
+
+    .f1-text{
+    color: $color-white;
+    margin:auto 10px;
+    font-size: 15px;
+    }
+    .f1-icon{
+        @include border-icon1;
+    }
+    .map:hover{
+        background-color:$color-success;
+        cursor: $cursor-pointer;
+    }
+    .f1-email:hover{
+        color: $color-success;
+        cursor: $cursor-pointer;
+    }
+}
+
+
+.footer-2{
+    @include display(flex ,row , space-between ,center);
+    height: 75px;
+    background-color: #171720;
+
+    .footer2-text{
+        font-size: 10px;
+        color: $color-white;
+        padding-left: 20px;
+        width: 365px;
+    }
+
+    .footer2-img{
+        width: 120px;
+        cursor: $cursor-pointer;
+    }
+    
+    
+}
+
+.footer2-link{
+    @include display(flex ,row , center ,center);
+    font-size: 13px;
+    padding-right: 20px;
+
+    .f2-link{
+        margin-right:10px;
+        color:$color-white;
+    }
+
+    .f2-link:hover{
+        color: $color-success;
+        cursor: $cursor-pointer;
+    }
+}
+
+#return-to-top{
+    position: fixed;
+    bottom: 75px;
+    right: 20px;
+    background-color: rgba(0,0,0,0.5);
+    width: 45px;
+    height: 45px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    transition: all .3s ease;
+    z-index: 10001;
+}
+.chevron-up{
+    position: relative;
+    bottom: 75px !important;
+    transition: all .3s ease;
+}
+.chevron-up:hover{
+    bottom: 76px !important;
+}
+
+#return-to-top:hover{
+    background: rgba(0,0,0,0.9);
+}

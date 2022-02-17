@@ -1,0 +1,31 @@
+body{
+    font-family:'Source Sans Pro', sans-serif ;
+    font-weight: 200;
+    line-height: 1.5;
+    color: #323232;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-size: 12px;
+    margin: auto 0;
+}
+
+@import 'rest';
+@import "mixin";
+@import "varible";
+
+
+@import "nav";
+@import "slider1";
+@import "body-main/body-main";
+@import "body-main/body-main-formData";
+@import "body-main/body-main-p-welcome";
+@import "body-main/body-main-card";
+@import "paragraph2-off";
+@import "slider2";
+@import "slider3";
+@import "footer";
+@import "btn-hover";
+@import "modals";
+@import "menu";
+
+

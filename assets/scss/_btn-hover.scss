@@ -1,0 +1,159 @@
+//                            ............................. btn nav ..........................
+
+.menu-btn{
+    background-color: hsl(55, 48%, 56%);
+    margin-right: 300px;
+    border:  #c5bc58 solid;
+    transition: color 0.1s ease-out;
+    position: absolute;
+    top: 25px;
+    width: 115px;
+    height: 37px;
+    border-radius: 0;
+    color: $color-white;
+    cursor: $cursor-pointer;
+}
+
+.z-index{
+    position: relative;
+    z-index: 101;
+}
+
+button.menu-btn::before {
+    content: "";
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: transform 0.3s ;
+    transform-origin:  bottom center;
+    transform: scaleY(0);
+}
+#btn{
+    margin-left: 5px;
+}
+.menu-btn:hover{
+    color: #c5bc58 !important;
+}
+
+.menu-btn:hover::before {
+    transform: scaleY(1);
+}
+
+//                .......................... btn slider1 ............................
+
+// slider1 img1
+.caption-btn{
+    @include btn; 
+    z-index: 10;
+    border: 1px $color-white solid;
+    color: $color-white !important;
+}
+.caption-btn:hover{
+    color:rgba(0,0,0,0.9) !important;
+}
+
+.btn-hover-img1{
+    position: relative;
+    width: 208px;
+    height: 37px !important;
+    top: -37px;
+    left: 338px;
+    background-color: $color-white;
+    @include  transition;
+}
+
+.caption-btn:hover ~ .btn-hover-img1{
+    transform: scaleY(1);
+}
+
+//slider1 img2
+
+.btn-hover-img2{
+    position: relative;
+    width: 161px;
+    height: 37px !important;
+    top: -37px;
+    left: 362px;
+    background-color: $color-white;
+    @include  transition;
+}
+
+.caption-btn:hover ~ .btn-hover-img2{
+    transform: scaleY(1);
+}
+
+// slider1 img3
+
+.btn-hover-img3{
+    position: relative;
+    width: 110px;
+    height: 37px !important;
+    top: -37px;
+    left: 387px;
+    background-color: $color-white;
+    @include  transition;
+}
+
+.caption-btn:hover ~ .btn-hover-img3{
+    transform: scaleY(1);
+}
+
+//                ................................ btn formData  ...................................
+
+.form-btn{
+    @include btn;
+    z-index: 10;
+    margin-top: 40px;
+    border: 1px #6fb586 solid;
+    
+    a{
+        text-decoration: none;
+        color: #6fb586 !important;
+    }
+}
+
+.form-btn:hover a{
+    color: #f4f4f4 !important;
+}
+
+.form-btn-hover{
+    position: relative;
+    width: 173px;
+    height: 37px !important;
+    top: -37px;
+    background-color: #6fb586;
+    @include  transition;
+}
+
+.form-btn:hover ~ .form-btn-hover{
+    transform: scaleY(1);
+}
+
+//                      .......................... btn paragragh2 ...........................
+.paragragh2-btn{ 
+    @include btn;
+    z-index: 10;
+}
+
+.paragragh2-btn:hover{
+    color: #f4f4f4 !important;
+}
+
+.paragragh2-btn-hover{
+    position: relative;
+    width: 163.5px;
+    height: 37px !important;
+    top: -37px;
+    background-color: #323232;
+    @include  transition;
+}
+
+
+
+.paragragh2-btn:hover ~ .paragragh2-btn-hover{
+    transform: scaleY(1);
+}

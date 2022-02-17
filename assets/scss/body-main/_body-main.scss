@@ -1,0 +1,8 @@
+.body-main{
+    @include position(relative,0px,0px,0px,0px);
+    top: -80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    z-index: $z-index;
+}
+

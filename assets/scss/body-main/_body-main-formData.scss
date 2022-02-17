@@ -1,0 +1,43 @@
+.form-date{
+    height: 280px;
+    background-color:#111118;
+    margin-bottom: 20px;
+    @include display(flex ,column , center ,center);
+    form{
+        @include display(flex ,column , center ,center);
+    }
+}
+
+.form-div-input{
+    @include display(flex ,row , center ,center);
+    .hasDatepicker{
+        text-align: center;
+        margin: auto 10px;
+        color: #fff;
+        background-color: #1F1F2C;
+        border: 1px solid #1f1f2c !important;
+        padding: 20px 0;
+        font-size: 22px !important;
+        font-weight: 200;
+        transition: border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s;
+    }   
+} 
+
+
+
+
+.date{
+    @include display(flex ,column , center ,center);
+
+    label{
+        font-family: Source Sans Pro,sans-serif;
+        color: #fff;
+        opacity: .5;
+        font-size: 13px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        margin: 10px auto;
+        text-transform: uppercase;
+    }
+}
+

@@ -1,0 +1,95 @@
+.header{
+    @include display(flex ,row,space-between,center);
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.2) !important;
+
+    .logo img{
+        @include margin;
+        width: 90px;
+        height: 50px;
+        cursor: $cursor-pointer;
+    }
+}
+
+.nav{
+    .ul-nav{
+        @include display(flex ,row,space-between,center);
+        list-style: none;
+        font-size: 15px;
+    }
+    .ul-nav li{
+        margin-left :35px;
+        color: #fff;
+        cursor: $cursor-pointer;
+        
+    }
+}
+
+.nav-box{
+    background-color: #000;
+    position: absolute;
+    left: 170px;
+    min-width: 150px;
+    visibility: hidden;
+    #home-light{
+        border-bottom: 1.5px solid #6fb586;
+        width:60%;
+        padding: 15px 0px;
+        padding-bottom: 10px;
+    }
+    #home-dark{
+        padding: 10px 0px;
+        padding-bottom: 15px;
+    }
+    .nav-background{
+        margin-top: 0px !important;
+    }
+}
+
+.nav-bg-home{
+    margin-top: 10px;
+    border-bottom: 1.5px solid #6fb586;
+}
+#box-home:hover .nav-box{
+    visibility: visible;
+}
+
+#box-more{
+    width: 3%;
+    font-size: 13px;
+    left: 790px;
+    padding-left: -10px;
+    padding-right: 20px;
+}
+#box-more li{
+    padding-top: 18px ;
+}
+#menu-item-921 {
+    padding-bottom: 18px;
+}
+
+.label-danger {
+    width: 2px !important;
+    background-color: #d9534f;
+    display: inline;
+    padding: 0.2em 0.6em 0.3em;
+    font-size: 8px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25em;
+}
+
+
+
+
+
+
+
+

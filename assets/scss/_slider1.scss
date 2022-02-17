@@ -1,0 +1,63 @@
+.mmain .slider1{
+   @include position(relative,0px,0px,0px,0px);
+}
+
+.item1 ,.item2 , .item3{
+    height: 700px;
+}
+
+.item1{
+    object-fit: cover;
+}
+
+@keyframes textAnimation {
+    from {
+        top: 110%
+    }
+    to {
+        top: 35%
+    }
+}
+
+.caption{
+    @include position(absolute,0px,0px,0px,0px);
+    z-index: 900;
+    top:35%;
+    left: 15%;
+    width: 70%;
+    color: $color-white !important;
+    text-align: center;
+    .caption-t1{
+        font-size: 14px;
+        letter-spacing: 7px;
+    }
+
+    .caption-t2{
+        margin: 20px auto;
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 1em;
+    }
+    .active & {
+        animation-name: textAnimation;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+.prev-slide {
+    @include prev-next;
+    left: 0px !important;
+}
+.next-slide{
+    @include prev-next;
+    right: 0 !important;
+}
+
+.prev-slide:hover{
+    background-color:rgba(0,0,0,0.7);
+}
+
+.next-slide:hover{
+    background-color: rgba(0,0,0,0.7);
+}
