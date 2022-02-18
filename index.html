@@ -146,17 +146,17 @@
                         
                         <div class="Check-in-date date" >
                         <label>Check in date</label>
-                        <input type="text" name="date_arrival"  placeholder="Select arrival date" id="datepicker" >
+                        <input type="text" name="date_arrival" class="bgroundColor-black textColor-white" placeholder="Select arrival date" id="datepicker" >
                         </div>
                     
                         <div class="Check-out-date date">
                         <label>Check out date</label>
-                        <input type="text"  name="date_departure"  placeholder="Select departure date"   id="datepicker-1">
+                        <input type="text"  name="date_departure" class="bgroundColor-black textColor-white" placeholder="Select departure date"   id="datepicker-1">
                         </div>
 
                         <div class="Number-of-rooms date">
                             <label>Number of rooms</label>
-                            <input type="text" id="rooms"  placeholder="number" class="hasDatepicker">
+                            <input type="text" id="rooms" placeholder="number" class="hasDatepicker bgroundColor-black   textColor-white">
                         </div>
                     </div>
                     
@@ -178,18 +178,7 @@
                                 <th>bed</th>
                             </thead>
                             <tbody id="table-tbody">
-                                <tr>
-                                    <td>2022-04-01</td>
-                                    <td>2024-04-08</td>
-                                    <td>21</td>
-                                    <td>2</td>
-                                </tr>
-                                <tr>
-                                    <td>2022-04-01</td>
-                                    <td>2024-04-08</td>
-                                    <td>21</td>
-                                    <td>2</td>
-                                </tr>
+                                
                             <tbody>
                         </table>  
                     </div>
@@ -310,7 +299,7 @@
 
         <div class="slider2-bg">
             <div class="slider2">
-                <div class="flex"style="display: none;" >
+                <div class="flex"style="display: none;" id="item-1">
                     <div class="slider2-box"  >
                         <h3 class="slider2-title">Single Room</h3>
                         <p class="slider2-subtitle">Single Room with sea view</p>
@@ -326,7 +315,7 @@
                     <img src="./assets/foto/slider2-rooms/room_1_n_1-1024x683.webp" alt="foto" class="slider2-img">
                 </div>
 
-                <div class="flex" style="display: none;" >
+                <div class="flex" style="display: none;" id="item-2">
                     <div class="slider2-box">
                         <h3 class="slider2-title">Double Room</h3>
                         <p class="slider2-subtitle">A quality room with sea or mountain view</p>
@@ -343,7 +332,7 @@
                     <img src="./assets/foto/slider2-rooms/room-2.webp" alt="foto" class="slider2-img">
                 </div>
 
-                <div class="flex" style="display: none;">
+                <div class="flex" style="display: none;" id="item-3">
                     <div class="slider2-box">
                         <h3 class="slider2-title">Family Suite</h3>
                         <p class="slider2-subtitle">Bring your family in this spacious suite!</p>
@@ -359,7 +348,7 @@
                     <img src="./assets/foto/slider2-rooms/room-3.webp" alt="foto" class="slider2-img">
                 </div>
 
-                <div class="flex" >
+                <div class="flex" id="item-4" >
                     <div class="slider2-box">
                         <h3 class="slider2-title">Deluxe King Suite</h3>
                         <p class="slider2-subtitle">Kings and queens sleep here!</p>
@@ -378,16 +367,16 @@
                 </div>
             </div>
             <div class="slider2-control">
-                <div class="dot">
+                <div class="dot" name="item-1">
                     <span class="iconify " data-icon="ci:dot-03-m" style="color: white;" data-width="25" data-height="25"></span>
                 </div>
-                <div class="dot">
+                <div class="dot" name="item-2">
                     <span class="iconify " data-icon="ci:dot-03-m" style="color: white;" data-width="25" data-height="25"></span>
                 </div>
-                <div class="dot">
+                <div class="dot" name="item-3">
                     <span class="iconify " data-icon="ci:dot-03-m" style="color: white;" data-width="25" data-height="25"></span>
                 </div>
-                <div class="dot">
+                <div class="dot" name="item-4">
                     <span class="iconify dot-active" data-icon="ci:dot-03-m" style="color: white;" data-width="25" data-height="25"></span>
                 </div>
             </div>

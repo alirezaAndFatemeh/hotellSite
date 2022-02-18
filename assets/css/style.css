@@ -60,6 +60,114 @@ table {
   border-spacing: 0;
 }
 
+.bgroundColor-success-dark {
+  background-color: #1bd760;
+}
+
+.borderColor-success-dark {
+  border-color: #1bd760;
+}
+
+.textColor-success-dark {
+  color: #1bd760;
+}
+
+.bgroundColor-warning {
+  background-color: #f90;
+}
+
+.borderColor-warning {
+  border-color: #f90;
+}
+
+.textColor-warning {
+  color: #f90;
+}
+
+.bgroundColor-danger {
+  background-color: #ff5600;
+}
+
+.borderColor-danger {
+  border-color: #ff5600;
+}
+
+.textColor-danger {
+  color: #ff5600;
+}
+
+.bgroundColor-success {
+  background-color: #6fb586;
+}
+
+.borderColor-success {
+  border-color: #6fb586;
+}
+
+.textColor-success {
+  color: #6fb586;
+}
+
+.bgroundColor-rgba1 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.borderColor-rgba1 {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.textColor-rgba1 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.bgroundColor-white {
+  background-color: #fff;
+}
+
+.borderColor-white {
+  border-color: #fff;
+}
+
+.textColor-white {
+  color: #fff;
+}
+
+.bgroundColor-rgba2 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.borderColor-rgba2 {
+  border-color: rgba(0, 0, 0, 0.7);
+}
+
+.textColor-rgba2 {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.bgroundColor-rgba3 {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.borderColor-rgba3 {
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+.textColor-rgba3 {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.bgroundColor-black {
+  background-color: #1F1F2C;
+}
+
+.borderColor-black {
+  border-color: #1F1F2C;
+}
+
+.textColor-black {
+  color: #1F1F2C;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -286,8 +394,6 @@ table {
 .form-div-input .hasDatepicker {
   text-align: center;
   margin: auto 10px;
-  color: #fff;
-  background-color: #1F1F2C;
   border: 1px solid #1f1f2c !important;
   padding: 20px 0;
   font-size: 22px !important;
@@ -536,7 +642,7 @@ table {
 }
 
 .dot-active {
-  color: green !important;
+  color: #d6d6d6 !important;
 }
 
 .slider2-box .slider2-title {

@@ -30,19 +30,6 @@ $(function() {
   }) 
 })
 
-// hover btn nav
-
-$(function() {
-
-  $("#btn").hover(function(){
-    
-    $(".menu-btn").css({transform: scaleY(1) } ,"slow")
-  })
-
-  //$(".menu-btn").mouseleave(function(){
-     // $(".nav-more").animate({ width:"0%" },"fast")
-  //}) 
-})
 
 //              ............................ menu ............................
 
@@ -147,29 +134,36 @@ $(".form-btn").click(function(e) {
       
 
       result.map(index => {
-
+        
         const formDate =new Date(index.from).getTime();
         const toDate =new Date(index.to).getTime();
-        console.log(formDate)
-        console.log(toDate)
-      
-        const trindex =
-        `
-        <tr>
-          <td>${index.from}</td>
-          <td>${index.to}</td>
-          <td>${index.room}</td>
-          <td>${index.bed}</td>
-        </tr>
-        `
-        $("#table-tbody").append(trindex)
-        $(".modal-msg").css({display: "block"})
-        $(".modal-msg__content").css({display: "block"})
-        $(".modal-msg__close").css({display: "block"})
-
-        if(objcheckInDate>=formDate && toDate>=objcheckOutDate) {
-          index.css({backgroundColor: "red"})
-        } 
+        
+        
+        if(objcheckInDate>=formDate && toDate>=objcheckOutDate && number==index.bed) {
+           $(".modal-msg").css({display: "block"})
+          const trindex =
+            `
+            <tr>
+              <td>${index.from}</td>
+              <td>${index.to}</td>
+              <td>${index.room}</td>
+              <td>${index.bed}</td>
+            </tr>
+            `
+          $("#table-tbody").append(trindex)
+          $("#table-tbody tr:last").css("background-color", "yellow");
+        } else {
+          const trindex =
+          `
+            <tr>
+              <td>${index.from}</td>
+              <td>${index.to}</td>
+              <td>${index.room}</td>
+              <td>${index.bed}</td>
+            </tr>
+            `
+          $("#table-tbody").append(trindex)
+        }
       })
     }
 
@@ -198,7 +192,7 @@ function deleteClassDotActiveFromDots() {
 
 dots.forEach(item => {
     item.onclick = function() {
-      const element = items.filter(x => x.id === this.attributes.name.nodeValue);[0];
+      const element = items.filter(x => x.id === this.attributes.name.nodeValue)[0];
       setDisplayNoneInSlider2Items();
       deleteClassDotActiveFromDots();
       element.style.display="flex";

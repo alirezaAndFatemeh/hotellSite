@@ -1,6 +1,28 @@
-$color-pallets : (success:#1bd760,warning:#f90, danger:#ff5600);
+$color-pallets : (
+    "success-dark":#1bd760,
+    "warning":#f90, 
+   "danger":#ff5600,
+    "success":#6fb586,
+    "rgba1" :rgba(0,0,0,0.5),
+    "white":#fff,
+    "rgba2":rgba(0,0,0,0.7),
+    "rgba3":rgba(0,0,0,0.9),
+    "black":#1F1F2C,
+    );
 $z-index :10;
 $color-white : #fff;
 $color-success:#6fb586;
 $color-rgba:rgba(0,0,0,0.5);
 $cursor-pointer: pointer;
+
+@each $var ,$code in $color-pallets {
+    .bgroundColor-#{$var} {
+        background-color: $code;
+    };
+    .borderColor-#{$var} {
+        border-color: $code;
+    };
+    .textColor-#{$var} {
+        color: $code;
+    };
+}
